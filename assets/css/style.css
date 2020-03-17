@@ -1,12 +1,30 @@
 .jumbotron {
     background-color: whitesmoke;
-    color: cornflowerblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-family: fantasy;
     text-align: center;
 }
 .lead {
     background-color: whitesmoke;
-    color: cornflowerblue;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-family: fantasy;
+    text-align: center;
+}
+.card {
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: fantasy;
+    text-align: center;
+}
+#submit {
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: fantasy;
+    box-align: center;
+}
+.form-control {
+    background-color: whitesmoke;
+    color: darkred;
+    font-family: fantasy;
     text-align: center;
 }

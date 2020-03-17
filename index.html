@@ -1,23 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I like Trains</title>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">I like trains</h1>
-          <p class="lead">Choo Choo</p>
+            <h1 class="display-4">I like trains</h1>
+            <p class="lead">Choo Choo</p>
         </div>
-      </div>
+    </div>
 
+    <div class="card">
+        <div class="card-header">
+            Quote
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destianation</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Next Train</th>
+                            <th scope="col">Mins Away</th>
+                          </tr>
+                        </thead>
+                        <tbody id="trainList">
+                     
+                        
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Add a Train
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="inputTrainName">Train Name</label>
+                        <input type="TrainName" class="form-control" id="inputTrainName">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputDestination">Destination</label>
+                        <input type="text" class="form-control" id="inputDestination" placeholder="1234 Main St">
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="inputFirst-Train-Time">First Train Time (HH:mm - military time) </label>
+                    <input type="First-Train-Time" class="form-control" id="inputFirst-Train-Time">
+                </div>
+        </div>
+        <div class="form-group col-md-12">
+            <label for="inputFrequency">Frequency(mins)</label>
+            <input type="text" class="form-control" id="inputFrequency">
+        </div>
+    </div>
+    <div class="form-group">
+    </div>
+    <button type="submit" id="submit" class="btn btn-dark">Submit</button>
+    </form>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
+
 </html>
